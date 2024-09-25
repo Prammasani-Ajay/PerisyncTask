@@ -1,0 +1,84 @@
+body{
+    background-color: orange;
+    padding:2rem 3rem;
+}
+main{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.navigations>li{
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+.navigations{
+    position: relative;
+    z-index: 1;
+}
+.getintouch,.logo{
+    cursor: pointer;
+}
+.navigations>li:hover,.buynow:hover{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 70px;
+}
+.textBox{
+    width: 50%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.image{
+    position: absolute;
+    left:30rem;
+    top: 10rem;
+    z-index: 0;
+}
+.toptext{
+    width: 100%;
+}
+.bottomtext{
+    width: 55%;
+}
+.image2{
+    position: absolute;
+    left:65rem;
+    top: 22rem;
+}
+/* .landingPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+@media only screen and (max-width: 480px) {
+    .textBox {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .image {
+        left: 5rem;
+        top: 3rem;
+    }
+
+    .image2 {
+        left: 20rem;
+        top: 10rem;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .bottomtext {
+        width: 100%;
+    }
+}
